@@ -1,0 +1,8 @@
+LICENSE
+README.md
+codigo.py
+pyproject.toml
+aprende_operando.egg-info/PKG-INFO
+aprende_operando.egg-info/SOURCES.txt
+aprende_operando.egg-info/dependency_links.txt
+aprende_operando.egg-info/top_level.txt
