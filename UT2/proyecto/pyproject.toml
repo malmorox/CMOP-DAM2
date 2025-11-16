@@ -1,5 +1,5 @@
 [project]
-name = "apuesta"
+name = "apuestas-nba"
 version = "0.1.0"
 description = "Librería con funciones básicas de operaciones con número"
 authors = [{name="Marcos Almorox"}]

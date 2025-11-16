@@ -1,0 +1,13 @@
+{
+    "apuestas": [
+        {
+            "id": "09e215bd-073f-43cd-939d-8612ac55b549",
+            "creador": "Marcos",
+            "equipo1": "Lakers",
+            "equipo2": "Warriors",
+            "monto": 50.0,
+            "participantes": [],
+            "ganador_real": null
+        }
+    ]
+}
