@@ -1,7 +1,7 @@
 [project]
-name = "apuestas-nba"
+name = "apuestas-deportivas"
 version = "0.1.0"
-description = "Librería con funciones básicas de operaciones con número"
+description = "Librería para simular apestas deportivas reales, con ganador y premio."
 authors = [{name="Marcos Almorox"}]
 readme = "README.md"
 requires-python = ">=3.8"

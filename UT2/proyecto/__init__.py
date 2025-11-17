@@ -1,1 +1,1 @@
-from .codigo import ejemplo
+from .codigo import *
