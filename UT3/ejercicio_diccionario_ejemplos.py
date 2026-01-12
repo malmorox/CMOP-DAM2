@@ -46,3 +46,105 @@ def filtrarCampo(campo):
 
 print(filtrarCampo("nombre"))
 print(filtrarCampo("apellidos"))
+
+def ej1():
+    for alumno in alumnos:
+        print(alumno["nombre"])
+
+def ej2():
+    for alumno in alumnos:
+        print(f'{alumno["nombre"]} tiene {alumno["hijos"]} hijos')
+
+def ej3(nombre):
+    encontrado = False
+    for alumno in alumnos:
+        if alumno["nombre"].lower() == nombre.lower():
+            print(f'Información de {alumno["nombre"]}:')
+            print(f'Hijos: {alumno["hijos"]}')
+            print(f'Edad: {alumno["edad"]} años')
+            print(f'Coche soñado: {alumno["coche"]}')
+            print(f'Nota: {alumno["nota"]}')
+            encontrado = True
+            break
+    if not encontrado:
+        print("No se ha encontrado el alumno")
+
+def ej4():
+    suma = 0
+    for alumno in alumnos:
+        suma += alumno["nota"]
+    media = suma / len(alumnos)
+    print(f'La nota media es: {media}')
+
+def ej5():
+    mas_hijos = max(alumnos, key=lambda x: x["hijos"])
+    menos_hijos = min(alumnos, key=lambda x: x["hijos"])
+
+    print(f"El compañero con mayor número de hijos es {mas_hijos['nombre']} con {mas_hijos['hijos']} hijos")
+    print(f"El compañero con menor número de hijos es {menos_hijos['nombre']} con {menos_hijos['hijos']} hijos")
+
+def ej6(valor):
+    alumnos_mayores = []
+
+    for alumno in alumnos:
+        if alumno["edad"] > valor:
+            alumnos_mayores.append(alumno["nombre"])
+    print(f'Alumnos mayores de {valor} años: {", ".join(alumnos_mayores)}')
+
+def ej7(textual):
+    alumnos_con_valor = []
+
+    for alumno in alumnos:
+        if textual.lower() in alumno["coche"].lower():
+            alumnos_con_valor.append(alumno["nombre"])
+    print(f'Alumnos cuyo coche soñado contiene "{textual}": {", ".join(alumnos_con_valor)}')
+
+def ej8():
+    similitudes = {}
+    for alumno in alumnos:
+        valor = alumno["edad"]
+        
+        if valor in similitudes:
+            similitudes[valor] += 1
+        else:
+            similitudes[valor] = 1
+
+    max_valor = max(similitudes, key=similitudes.get)
+    print(f'La edad que más se repite es {max_valor} años con {similitudes[max_valor]} veces')
+
+def ej9():
+    nueva_lista = []
+
+    for alumno in alumnos:
+        nuevo_diccionario = {
+            "nombre": alumno["nombre"],
+            "coche": alumno["coche"]
+        }
+        nueva_lista.append(nuevo_diccionario)
+    
+    for item in nueva_lista:
+        print(item)
+
+def ej10():
+    nuevo_diccionario = {alumno["nombre"]: alumno for alumno in alumnos}
+
+    print(nuevo_diccionario)
+
+def ej11(campo):
+    nota_media_por_edad = sum(alumno["nota"] for alumno in alumnos if alumno["edad"] == campo) / len([alumno for alumno in alumnos if alumno["edad"] == campo])
+    print(f"Nota media por edad {campo}: {nota_media_por_edad}")
+
+def ej12():
+    nueva_lista_ordenada_edad = 
+
+ej1()
+ej2()
+ej3("Paz")
+ej4()
+ej5()
+ej6(20)
+ej7("GTI")
+ej8()
+ej9()
+ej10()
+ej11(19)

@@ -68,4 +68,3 @@ def resolver_recorrido_caballo(n):
         movimiento_y = 0
         if es_movimiento_valido(movimiento_x, movimiento_y, TABLERO):
             
-            break
